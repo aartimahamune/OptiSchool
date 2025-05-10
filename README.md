@@ -1,1 +1,1 @@
-# OptiSchool
+OptiSchoolOptiSchool is a dynamic school management system built using ReactJS,NodeJS, ExpressJS, and MongoDB to simplify academic and administrativeworkflows. It features role-based login for students and admins, ensuringsecure and personalized access. Admins can manage student admissions,upload study materials, and update the gallery with school event photos.Students can log in to view their profiles and download study materials. Itsintuitive design and robust functionality make it ideal for schools aiming toenhance operational efficiency.

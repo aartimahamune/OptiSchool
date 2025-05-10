@@ -1,0 +1,211 @@
+/* AdmissionForm.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 20px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #b3d6ef, #e0e0e0);
+}
+
+.section-title {
+  background-color: #004aad;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.section-divider {
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button {
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover{
+  background-color: #0957bd;
+}
+.reset-button {
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #c2453a; /* Red */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.reset-button:hover{
+  background-color: #da4538;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.upload-button {
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-button:hover{
+  background-color: #0957bd;
+}
+.upload-button:active {
+  transform: translateY(2px);
+}
+
+.view-button {
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #00378d;
+}
+
+.view-button:active {
+  transform: translateY(2px);
+}
+
+.success-message {
+  margin: 1rem;
+  background-color: #dff6e1;
+  padding: 8px 16px;
+  color: #67d66a;
+  border-radius: 6px;
+}
+
+.rules-section {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.image-preview {
+  max-width: 200px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.error-message {
+  margin: 1rem;
+  background-color: #f0c0b4;
+  padding: 8px 16px;
+  color: #ef2323;
+  border-radius: 6px;
+}
+
+.image-upload-container {
+  text-align: center;
+}
+
+.image-upload-container .upload-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6C757D;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 6px;
+}
+
+.image-upload-container .upload-button:hover {
+  background-color: #5a6268;
+}
+
+.image-upload-container .upload-button:active {
+  transform: translateY(2px);
+}
+
+.upload-image-preview {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}

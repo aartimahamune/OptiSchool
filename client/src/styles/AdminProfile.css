@@ -1,0 +1,173 @@
+/* Admin Container */
+.Admin-container {
+  max-width: 400px;
+  margin: 2em auto;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px #004aad;
+  font-family: 'Arial', sans-serif;
+  color: #004aad;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+  background: linear-gradient(to right, #b3d6ef, #e0e0e0);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Admin Picture */
+.Admin-container .admin-pic {
+  width: 100%;
+  height: auto;
+}
+
+.Admin-container img {
+  width: 18%; /* Adjust this to change the image width */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px;
+}
+
+/* Admin Name */
+.admin-name {
+  font-size: 1.4rem;
+  color: #004aad;
+  margin-top: 5px;
+}
+
+/* Buttons Container */
+.admin-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+/* Admin Buttons */
+.admin-button {
+  background-color: #004aad;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5em 0; /* Adjust margin */
+  width: 100%; /* Full width */
+  white-space: nowrap;
+}
+
+.admin-button:hover {
+  background-color: #003a8c;
+}
+
+/* Actions Section */
+.admin-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Individual Action Buttons */
+.admin-action-button {
+  background-color: #004aad;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5em 0; /* Add margin for better spacing on smaller screens */
+}
+
+.admin-action-button:hover {
+  background-color: #003a8c;
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .Admin-container {
+      max-width: 90%;
+      padding: 1.5em;
+      font-size: 1.3rem;
+  }
+
+  .Admin-container img {
+      width: 25%;
+  }
+
+  .admin-button {
+      padding: 1em 6em; /* Reduce padding for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .Admin-container {
+      padding: 1.2em;
+      font-size: 1.2rem;
+  }
+
+  .Admin-container img {
+      width: 30%;
+  }
+
+  .admin-buttons {
+      flex-direction: column;
+  }
+
+  .admin-button {
+      font-size: 0.9rem;
+      padding: 0.8em 4em; /* Further reduce padding for small screens */
+  }
+
+  .admin-actions {
+      flex-wrap: wrap;
+      justify-content: center; /* Center actions on smaller screens */
+  }
+
+  .admin-action-button {
+      font-size: 0.9rem;
+      padding: 0.5em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .Admin-container {
+      max-width: 100%;
+      margin: 1em auto;
+      padding: 1em;
+      font-size: 1rem;
+  }
+
+  .Admin-container img {
+      width: 40%;
+  }
+
+  .admin-button {
+      font-size: 0.8rem;
+      padding: 0.6em 2em; /* Reduce padding for mobile */
+  }
+
+  .admin-actions {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .admin-action-button {
+      font-size: 0.8rem;
+      padding: 0.5em 1em;
+  }
+}

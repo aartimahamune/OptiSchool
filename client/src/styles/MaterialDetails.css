@@ -1,0 +1,120 @@
+.study-material-filter-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.study-material-filter-container__filter-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004aad; /* Blue */
+  text-align: center;
+}
+
+.study-material-filter-container__filter-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.study-material-filter-container__filter-section label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.study-material-filter-container__class-select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.study-material-filter-container__button-section,
+.study-material-filter-container__upload-button-section {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.study-material-filter-container__fetch-button,
+.study-material-filter-container__upload-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.study-material-filter-container__fetch-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.study-material-filter-container__fetch-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.study-material-filter-container__fetch-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.study-material-filter-container__upload-button {
+  background-color: #004aad; /* Blue */
+  color: white;
+}
+
+.study-material-filter-container__upload-button:hover {
+  background-color: #004aad;
+}
+
+.study-material-filter-container__error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.study-material-filter-container__data-display {
+  margin-top: 20px;
+}
+
+.study-material-filter-container__data-display table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.study-material-filter-container__data-display th,
+.study-material-filter-container__data-display td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.study-material-filter-container__data-display th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.study-material-filter-container__view-button {
+  padding: 6px 12px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.study-material-filter-container__view-button:hover {
+  background-color: #004aad;
+}
+
+.study-material-filter-container__no-data-message {
+  color: #666;
+  font-size: 16px;
+  margin-top: 20px;
+}

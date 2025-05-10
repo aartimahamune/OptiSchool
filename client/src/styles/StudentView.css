@@ -1,0 +1,115 @@
+/* Student View Container */
+.student-view-container__student {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px #004aad;
+  background: linear-gradient(to right, #b3d6ef, #e0e0e0);
+}
+
+/* Student View Header */
+.student-view-container__header {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+  color: #004aad;
+}
+
+/* Student Profile Section */
+.student-view-container__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.student-view-container__photo {
+  flex: 1;
+  max-width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.student-view-container__photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #004aad;
+}
+
+.student-view-container__info {
+  flex: 2;
+  max-width: 650px;
+  padding: 20px;
+}
+
+.student-view-container__info p {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.student-view-container__info strong {
+  font-weight: bold;
+  color: #004aad;
+}
+
+/* Document Section */
+.student-view-container__documents {
+  margin-top: 30px;
+}
+
+.student-view-container__documents h3 {
+  font-size: 20px;
+  color: #004aad;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.student-view-container__documents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.student-view-container__documents li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.student-view-container__documents a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+.student-view-container__documents a:hover {
+  text-decoration: underline;
+}
+
+/* Error & Loading States */
+.student-view-container__loading, .student-view-container__error {
+  text-align: center;
+  font-size: 18px;
+  color: #ff0000;
+}
+
+/* Additional Styles for View */
+.student-view-container__view-button {
+  background-color: #004aad;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.student-view-container__view-button:hover {
+  background-color: #0056b3;
+}

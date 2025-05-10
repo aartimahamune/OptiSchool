@@ -1,0 +1,169 @@
+/* Footer Styles */
+.footer {
+    background-color: #004aad; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Footer Container */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1 1 22%; /* Ensure 4 columns fit in a row */
+    min-width: 150px; /* Prevent columns from shrinking too much */
+    text-align: left;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .logo-column {
+    text-align: center;
+  }
+  
+  .logo-column img {
+    max-width: 100px; /* Adjust logo size */
+    height: auto;
+    margin-top: 5px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Styling */
+  .social-media ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .social-media ul li {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    margin: 10px 0; /* Add spacing between each social media link */
+  }
+  
+  .social-media ul li a {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Adjust text color */
+    text-decoration: none;
+    margin-right: 40px; /* Space between the icon and text */
+    font-size: 18px; /* Text size for social media links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    vertical-align: middle;
+  }
+  
+  .social-media ul li a img.social-icon {
+    width: 16px; /* Icon size */
+    height: 16px;
+    object-fit: cover; /* Maintain aspect ratio of the icons */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+  }
+  
+  .social-media ul li a:hover {
+    color: #ffcc00; /* Change text color on hover */
+  }
+  
+  .social-media ul li a img.social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Media Query for Medium Screens (Tablets, 768px) */
+  @media (max-width: 768px) {
+    .footer-column {
+      flex: 1 1 45%; /* Adjust column width for medium screens */
+      text-align: center;
+    }
+  
+    .logo-column {
+      margin-bottom: 20px;
+    }
+  
+    .footer-container {
+      gap: 10px; /* Adjust gap for smaller screens */
+    }
+  
+    .social-media ul li {
+      margin: 8px 0; /* Reduce space between social media links */
+    }
+  }
+  
+  /* Media Query for Small Screens (Mobile, 480px) */
+  @media (max-width: 480px) {
+    .footer-column {
+      flex: 1 1 100%; /* Stack columns vertically on very small screens */
+      text-align: center; /* Center align text on small screens */
+    }
+  
+    .logo-column img {
+      max-width: 80px; /* Reduce logo size */
+    }
+  
+    .footer-bottom {
+      font-size: 12px; /* Adjust footer text size for smaller screens */
+    }
+  
+    .social-media ul li a {
+      font-size: 14px; /* Adjust text size for smaller screens */
+    }
+  
+    .social-media ul li a img.social-icon {
+      width: 20px; /* Adjust icon size for smaller screens */
+      height: 20px;
+    }
+  
+    /* Stack social media icons */
+    .social-media ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .social-media ul li {
+      margin-right: 20px;
+    }
+  }
+  

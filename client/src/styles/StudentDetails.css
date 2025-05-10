@@ -1,0 +1,233 @@
+/* Filter Section - Aligning elements side by side */
+.filter-section {
+  display: flex;
+  justify-content: space-between; /* Spread the select and buttons apart */
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+/* Center the title */
+.title {
+  display: flex;
+  justify-content: center; /* Center the title horizontally */
+  align-items: center; /* Optionally center vertically */
+  font-size: 2rem; /* Adjust font size */
+  font-weight: bold; /* Make the title bold */
+  color: #004aad; /* Set the title color */
+  margin-bottom: 1em; /* Space below the title */
+}
+
+/* Container for Buttons - Aligning buttons to the right */
+.buttons-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 1em; /* Space between buttons */
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-item label {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #004aad;
+}
+
+.filter-item select {
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #004aad;
+  width: 150px; /* Retain the original width */
+  margin-right: 1.5em; /* Space between select and button */
+  order: 1; /* Ensure the select stays on the left */
+}
+
+.button {
+  background-color: #004aad;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px; /* Set a fixed width to make buttons the same size */
+}
+
+.button:hover {
+  background-color: #003a8c;
+}
+
+/* Fetch Button */
+.fetch-button {
+  width: 150px; /* Same width as the add button */
+}
+
+/* Add Student Button */
+.add-button {
+  background-color: #004aad;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px; /* Same width as fetch button */
+}
+
+.add-button:hover {
+  background-color: #003a8c;
+}
+
+/* Table Container */
+.table-container {
+  margin-top: 2em;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.student-table th,
+.student-table td {
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.student-table th {
+  background-color: #004aad;
+  color: white;
+  font-weight: bold;
+}
+
+.student-table td {
+  background-color: #f9f9f9;
+}
+
+.student-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Total Count */
+.total-count {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #004aad;
+  margin-top: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .student-details-container {
+    max-width: 90%;
+    padding: 1.5em;
+    font-size: 1.3rem;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; /* Adjust gap for mobile view */
+  }
+
+  .dropdown {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .fetch-button {
+    width: 150px; /* Ensure the fetch button width is consistent */
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .add-button {
+    width: 150px; /* Ensure the add button width is consistent */
+  }
+}
+
+@media (max-width: 768px) {
+  .student-details-container {
+    padding: 1.2em;
+    font-size: 1.2rem;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; /* Adjust gap for mobile view */
+  }
+
+  .filter-item {
+    margin-bottom: 1em;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .student-table {
+    font-size: 0.9rem;
+  }
+
+  .total-count {
+    font-size: 1rem;
+  }
+
+  .add-button {
+    font-size: 1rem;
+    padding: 0.8em 2.5em;
+    width: 150px; /* Consistent width */
+  }
+}
+
+@media (max-width: 480px) {
+  .student-details-container {
+    padding: 1em;
+    font-size: 1rem;
+  }
+
+  .filter-item label {
+    font-size: 0.9rem;
+  }
+
+  .dropdown {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .fetch-button {
+    width: 150px; /* Consistent width for fetch button */
+    padding: 0.6em 1.5em;
+    font-size: 0.9rem;
+  }
+
+  .student-table {
+    font-size: 0.8rem;
+  }
+
+  .add-button {
+    font-size: 0.9rem;
+    padding: 0.8em 2.5em;
+    width: 150px; /* Consistent width for add button */
+  }
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

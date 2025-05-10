@@ -1,0 +1,181 @@
+/* Container styling */
+.about {
+    max-width: 1200px; /* Adjusted max-width for better layout */
+    margin: 0 auto;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .about:hover {
+    transform: scale(1.01); /* Added hover effect */
+  }
+  
+  /* Flexbox layout for image and content */
+  .about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0; /* Space between image and text */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  /* Image styling */
+  .about__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition effect */
+  }
+  
+  .about__image img:hover {
+    transform: scale(1.05); /* Added hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+  }
+  
+  /* Ensure image takes 40% width */
+  .about__image {
+    flex: 1;
+    max-width: 50%;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Information/content styling */
+  .about__info {
+    flex: 1;
+    max-width: 50%;
+    text-align: justify;
+    padding-left: 20px;
+  }
+  
+  .about__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 50px;
+    color: #004aad; /* Updated color */
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif; /* Added font */
+    text-shadow: 2px 2px 5px #6a8192;
+  }
+  
+  .about__paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Increased line height for readability */
+    color: #004aad;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Added font */
+    transition: color 0.3s; /* Added transition */
+  }
+  
+  .about__paragraph:hover {
+    color: #333; /* Added hover effect */
+  }
+  
+  /* President Section */
+  .about__president {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 30px;
+  }
+  
+  /* President Info */
+  .about__president-info {
+    flex: 1;
+    max-width: 60%;
+    text-align: justify;
+    padding-left: 0px;
+  }
+  
+  .about__president-title {
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 15px;
+  }
+  
+  .about__president-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #004aad;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about__president-paragraph:hover {
+    color: #333; /* Added hover effect */
+  }
+  
+  
+  /* President Image */
+  .about__president-image {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .about__president-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 1024px) {
+    .about {
+      padding: 15px;
+    }
+  
+    .about__title {
+      font-size: 2rem;
+      margin: 30px 0;
+    }
+  
+    .about__content {
+      gap: 10px;
+    }
+  
+    .about__paragraph {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about__content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about__image,
+    .about__info {
+      max-width: 100%;
+      padding: 0;
+    }
+  
+    .about__title {
+      font-size: 1.8rem;
+    }
+  
+    .about__paragraph {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about {
+      padding: 10px;
+    }
+  
+    .about__title {
+      font-size: 1.5rem;
+    }
+  
+    .about__paragraph {
+      font-size: 0.9rem;
+    }
+  }
+  

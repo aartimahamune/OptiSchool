@@ -1,0 +1,251 @@
+.gallery {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+  }
+  
+  .gallery .heading {
+    color: #004aad;
+    text-align: center;
+    margin: 50px;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 5px #6a8192;
+  }
+  
+  /* Grid Container */
+  .gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    gap: 2rem; /* Gap between grid items */
+    justify-content: center;
+  }
+  
+  /* General Box Styling */
+  .gallery .box-container .box1,
+  .gallery .box-container .box2,
+  .gallery .box-container .box3,
+  .gallery .box-container .box4,
+  .gallery .box-container .box5,
+  .gallery .box-container .box6,
+  .gallery .box-container .box7,
+  .gallery .box-container .box8,
+  .gallery .box-container .box9,
+  .gallery .box-container .box10,
+  .gallery .box-container .box11,
+  .gallery .box-container .box12 {
+    overflow: hidden;
+    box-shadow: 5px 5px 2px #004aad;
+    border: 0.1rem solid #b3d6ef;
+    border-radius: 1.2rem;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Box Sizes */
+  .gallery .box1 {
+    grid-column: span 2; /* Small square box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box2 {
+    grid-column: span 1; /* Horizontal box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box3 {
+    grid-column: span 1; /* Small square box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box4 {
+    grid-column: span 1; /* Horizontal box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box5 {
+    grid-column: span 2; /* Large square box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box6 {
+    grid-column: span 1; /* Small square box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box7 {
+    grid-column: span 1; /* Small square box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box8 {
+    grid-column: span 1; /* Horizontal box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box9 {
+    grid-column: span 2; /* Horizontal box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box10 {
+    grid-column: span 2; /* Horizontal box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box11 {
+    grid-column: span 1; /* Horizontal box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  .gallery .box12 {
+    grid-column: span 1; /* Horizontal box */
+    grid-row: span 1;
+    height: 20rem;
+  }
+  
+  /* Box Image Styling */
+  .gallery .box-container .box1 img,
+  .gallery .box-container .box2 img,
+  .gallery .box-container .box3 img,
+  .gallery .box-container .box4 img,
+  .gallery .box-container .box5 img,
+  .gallery .box-container .box6 img,
+  .gallery .box-container .box7 img,
+  .gallery .box-container .box8 img,
+  .gallery .box-container .box9 img,
+  .gallery .box-container .box10 img,
+  .gallery .box-container .box11 img,
+  .gallery .box-container .box12 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(90%);
+  }
+  
+  .gallery .box-container .box1 img,
+  .gallery .box-container .box4 img,
+  .gallery .box-container .box10 img{
+    object-fit: fill;
+  }
+  
+  /* Hover Effects */
+  .gallery .box-container .box1:hover,
+  .gallery .box-container .box2:hover,
+  .gallery .box-container .box3:hover,
+  .gallery .box-container .box4:hover,
+  .gallery .box-container .box5:hover,
+  .gallery .box-container .box6:hover,
+  .gallery .box-container .box7:hover,
+  .gallery .box-container .box8:hover,
+  .gallery .box-container .box9:hover,
+  .gallery .box-container .box10:hover,
+  .gallery .box-container .box11:hover,
+  .gallery .box-container .box12:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .gallery .box-container .box1:hover img,
+  .gallery .box-container .box2:hover img,
+  .gallery .box-container .box3:hover img,
+  .gallery .box-container .box4:hover img,
+  .gallery .box-container .box5:hover img,
+  .gallery .box-container .box6:hover img,
+  .gallery .box-container .box7:hover img,
+  .gallery .box-container .box8:hover img,
+  .gallery .box-container .box9:hover img,
+  .gallery .box-container .box10:hover img,
+  .gallery .box-container .box11:hover img,
+  .gallery .box-container .box12:hover img {
+    transform: scale(1.1);
+    filter: brightness(100%);
+  }
+  
+  /* Content Overlay */
+  .gallery .box-container .box1 .content,
+  .gallery .box-container .box2 .content,
+  .gallery .box-container .box3 .content,
+  .gallery .box-container .box4 .content,
+  .gallery .box-container .box5 .content,
+  .gallery .box-container .box6 .content,
+  .gallery .box-container .box7 .content,
+  .gallery .box-container .box8 .content,
+  .gallery .box-container .box9 .content,
+  .gallery .box-container .box10 .content,
+  .gallery .box-container .box11 .content,
+  .gallery .box-container .box12 .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    color: #fff;
+    padding: 0rem;
+    border-radius: 1rem;
+    transition: top 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .gallery .box-container .box1:hover .content,
+  .gallery .box-container .box2:hover .content,
+  .gallery .box-container .box3:hover .content,
+  .gallery .box-container .box4:hover .content,
+  .gallery .box-container .box5:hover .content,
+  .gallery .box-container .box6:hover .content,
+  .gallery .box-container .box7:hover .content,
+  .gallery .box-container .box8:hover .content,
+  .gallery .box-container .box9:hover .content,
+  .gallery .box-container .box10:hover .content,
+  .gallery .box-container .box11:hover .content,
+  .gallery .box-container .box12:hover .content {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  }
+  
+  /* Text Content */
+  .gallery .box-container .content h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #69d6f8;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .gallery .box-container .content p {
+    font-size: 1.2rem;
+    color: #ddd;
+    padding: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 1024px) {
+    .gallery .box-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery .box-container {
+      grid-template-columns: 1fr; /* Single column layout */
+    }
+  }

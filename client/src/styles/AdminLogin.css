@@ -1,0 +1,154 @@
+/* Admin Login Form */
+.Adminlogin-form {
+  max-width: 350px;
+  margin: 2em auto;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px #004aad;
+  font-family: 'Arial', sans-serif;
+  color: #004aad;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+  background: linear-gradient(to right, #b3d6ef, #e0e0e0);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Admin Login Form Heading */
+.Adminlogin-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #004aad;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Group */
+.form__group {
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Labels */
+.Adminlogin-form label {
+  text-align: left;
+  display: block;
+  margin-top: 1em;
+  color: #555;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Input Fields */
+.Adminlogin-form input {
+  width: 100%;
+  padding: 0.75em;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.Adminlogin-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.Adminlogin-form button {
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 1.5em;
+  margin-left: -1px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+.Adminlogin-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .Adminlogin-form {
+      max-width: 90%;
+      padding: 1.5em;
+      font-size: 1.2rem;
+  }
+
+  .Adminlogin-form h2 {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Adminlogin-form {
+      padding: 1.2em;
+      font-size: 1rem;
+  }
+
+  .Adminlogin-form h2 {
+      font-size: 1.6rem;
+  }
+
+  .Adminlogin-form button {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Adminlogin-form {
+      max-width: 100%;
+      margin: 1em auto;
+      padding: 1em;
+      font-size: 0.9rem;
+  }
+
+  .Adminlogin-form h2 {
+      font-size: 1.4rem;
+  }
+
+  .Adminlogin-form button {
+      padding: 0.6em;
+      font-size: 14px;
+  }
+}
+
+/* Style for the error message */
+.error-message {
+  color: #d9534f; /* A soft red color */
+  background-color: #f8d7da; /* Light red background */
+  border: 1px solid #f5c6cb; /* Border color to match background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}

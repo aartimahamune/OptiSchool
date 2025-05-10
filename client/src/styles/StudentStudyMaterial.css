@@ -1,0 +1,102 @@
+/* Container for Study Materials */
+.study-materials-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #b3d6ef, #e0e0e0);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 173, 0.5);
+  text-align: center;
+}
+
+/* Title Styling */
+.study-materials-title {
+  font-size: 28px;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+/* Error Message Styling */
+.study-materials-error-message {
+  color: #ff4d4d;
+  font-size: 16px;
+  margin: 10px 0;
+  background-color: #ffe5e5;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ff4d4d;
+}
+
+/* Loading Message Styling */
+.study-materials-loading-message {
+  font-size: 16px;
+  color: #004aad;
+  margin: 10px 0;
+}
+
+/* Card Container */
+.study-materials-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual Card Styling */
+.study-materials-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.study-materials-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.study-materials-card h3 {
+  font-size: 20px;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.study-materials-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.study-materials-card strong {
+  color: #004aad;
+}
+
+/* Download Button Styling */
+.study-materials-download-button {
+  display: inline-block;
+  background-color: #004aad;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.study-materials-download-button:hover {
+  background-color: #0056b3;
+}
+
+.study-materials-error-message, .study-materials-loading-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
